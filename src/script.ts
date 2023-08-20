@@ -1,3 +1,8 @@
-const country = "Uganda";
+let playerName = "Shakib";
+console.log(playerName);
 
-console.log(country);
+function multiply(a: number, b: number) {
+  return a * b;
+}
+
+console.log(multiply(2, 3));
