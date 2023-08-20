@@ -62,3 +62,20 @@ const sayHello = (user) => {
 };
 userDetails("a", "Shakib");
 sayHello({ name: "Shakib", id: 1 });
+// function signature
+let add;
+add = (a, b) => {
+    return a + b;
+};
+console.log(add(5, 10));
+let calc;
+calc = (a, b, c) => {
+    if (c === 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+console.log(calc(5, 10, 'add'));
+console.log(calc(5, 10, 'sub'));

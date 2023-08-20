@@ -95,3 +95,26 @@ const sayHello = (user: { name: string; id: StringOrNum }) => {
 
 userDetails("a", "Shakib");
 sayHello({ name: "Shakib", id: 1 });
+
+
+// function signature
+let add: (a: number, b: number) => number;
+
+add = (a: number, b: number) => {
+    return a + b;
+}
+
+console.log(add(5, 10));
+
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (a: number, b: number, c: string) => {
+    if(c === 'add') {
+        return a + b;
+    } else {
+        return a - b;
+    }
+}
+
+console.log(calc(5, 10, 'add'));
+console.log(calc(5, 10, 'sub')); 
