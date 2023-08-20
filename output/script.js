@@ -13,7 +13,7 @@ console.log(fruits);
 let person = {
     name: "Shakib",
     age: 35,
-    isCaptain: true
+    isCaptain: true,
 };
 person.name = "Mashrafi";
 // person.country = "Bangladesh"
@@ -31,7 +31,7 @@ let obj;
 obj = {
     name: "Shakib",
     age: 35,
-    adult: true
+    adult: true,
 };
 // dynamic type
 let myVar = 10;
@@ -43,13 +43,22 @@ let anyObj;
 anyObj = {
     name: "Shakib",
     age: 35,
-    adult: "true"
+    adult: "true",
 };
 // function type
 // let myFunc: Function;
 const myFunc = (a, b, c = "!") => {
+    // ? means optional parameter
     return `${a} ${b} ${c}`;
 };
 // myFunc = 5;
 // can't assign number type value to a function type variable
 console.log(myFunc("Hello", "World"));
+const userDetails = (id, name) => {
+    console.log(`User id is ${id}, name is ${name}`);
+};
+const sayHello = (user) => {
+    console.log(`Hello ${user.name}, your id is ${user.id}`);
+};
+userDetails("a", "Shakib");
+sayHello({ name: "Shakib", id: 1 });
