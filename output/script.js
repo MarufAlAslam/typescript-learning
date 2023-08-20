@@ -33,3 +33,15 @@ obj = {
     age: 35,
     adult: true
 };
+// dynamic type
+let myVar = 10;
+myVar = "Hello";
+let anyArr = [];
+anyArr.push(10);
+anyArr.push("Hello");
+let anyObj;
+anyObj = {
+    name: "Shakib",
+    age: 35,
+    adult: "true"
+};
