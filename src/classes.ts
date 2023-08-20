@@ -1,4 +1,4 @@
-class Player {
+export class Player {
     name: string;
     age: number;
     country: string;
@@ -14,14 +14,3 @@ class Player {
     }
 }
 
-// creating object
-const shakib = new Player("Shakib", 35, "Bangladesh");
-const mashrafi = new Player("Mashrafi", 38, "Bangladesh");
-
-const players:Player[] = [];
-
-
-players.push(shakib);
-players.push(mashrafi);
-
-console.log(players);

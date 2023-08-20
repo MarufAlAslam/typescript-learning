@@ -1,4 +1,3 @@
-"use strict";
 let playerName = "Shakib";
 console.log(playerName);
 function multiply(a, b) {
@@ -79,3 +78,12 @@ calc = (a, b, c) => {
 };
 console.log(calc(5, 10, 'add'));
 console.log(calc(5, 10, 'sub'));
+// class object
+import { Player } from "./classes.js";
+// creating object
+const shakib = new Player("Shakib", 35, "Bangladesh");
+const mashrafi = new Player("Mashrafi", 38, "Bangladesh");
+const players = [];
+players.push(shakib);
+players.push(mashrafi);
+console.log(players);
