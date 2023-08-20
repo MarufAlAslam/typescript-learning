@@ -1,1 +1,3 @@
-console.log("Hello")
+const country = "Bangladesh";
+
+console.log(country);

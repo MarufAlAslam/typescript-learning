@@ -1,1 +1,2 @@
-console.log("Hello");
+var country = "Bangladesh";
+console.log(country);
