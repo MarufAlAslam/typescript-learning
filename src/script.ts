@@ -73,3 +73,16 @@ anyObj = {
     age: 35,
     adult: "true"
 }
+
+
+// function type
+// let myFunc: Function;
+
+const myFunc = (a:string, b:string, c:string = "!") => { // ? means optional parameter
+    return `${a} ${b} ${c}`;
+}
+
+// myFunc = 5;
+// can't assign number type value to a function type variable
+
+console.log(myFunc("Hello", "World"));
